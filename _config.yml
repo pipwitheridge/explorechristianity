@@ -1,0 +1,4 @@
+title: Explore Christianity
+baseurl: ""  # if hosted at root, otherwise e.g., "/repo-name"
+url: "https://pipwitheridge.github.io"
+permalink: /:year/:month/:day/:title.html
