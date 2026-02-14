@@ -1,0 +1,74 @@
+:root {
+    --bg-main: rgb(252, 252, 252);
+    --bg-light: rgb(240, 240, 240);
+    --shadow-light: rgb(230, 230, 230);
+    --text-main: rgb(10, 10, 10);
+    --radius-small: 5px;
+    --radius-medium: 10px;
+}
+
+/* Add a wrapper for consistent horizontal padding */
+body {
+    margin: 0; /* remove default margin */
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: system-ui, sans-serif;
+}
+
+/* New container class to wrap all content */
+.container {
+    padding: 5%; /* 5% left/right padding on all screens */
+    max-width: 700px;  /* prevents content from stretching too wide on desktop */
+    margin: 0 auto;     /* center container horizontally */
+}
+
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: clamp(36px, 8vw, 60px);
+}
+
+.hero-light {
+    font-weight: 200;
+}
+
+.hero-bold {
+    font-weight: 500;
+}
+
+.textbox {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    background-color: var(--bg-light);
+    box-shadow: 0 0 4px 1px var(--shadow-light);
+    border-radius: var(--radius-medium);
+    font-size: clamp(20px, 6vw, 40px);
+    font-weight: 200;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuItem a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+    padding: 10px 15px;
+    border-radius: var(--radius-small);
+    box-shadow: 0 0 4px 1px var(--shadow-light);
+    text-align: center;
+}
