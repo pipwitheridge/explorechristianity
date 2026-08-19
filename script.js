@@ -93,17 +93,16 @@ function animateVideo() {
     // Distance from viewport centre
     const distance = videoCenter - viewportCenter;
 
-    // How far away the animation can operate
+    // Only animate when video is BELOW the viewport centre
     const range = window.innerHeight * 0.5;
 
-    // Convert distance to 0 → 1
-    let progress = 1 - Math.abs(distance) / range;
+    let progress = distance / range;
 
     // Keep between 0 and 1
     progress = Math.max(0, Math.min(1, progress));
 
     // -5deg → 0deg
-    const skew = -5 * (1 - progress);
+    const skew = -5 * progress;
 
     welcomeVideo.style.transform = `skewY(${skew}deg)`;
 
