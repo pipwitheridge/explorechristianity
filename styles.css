@@ -238,13 +238,14 @@ iframe {
     background-color: whitesmoke;
     display: flex;
     align-items: center;
-    flex: 0 0 40vw;
+    flex: 0 0 50vw;
     scroll-snap-align: center;
     padding: var(--space-sm);
     margin-left: var(--space-sm);
     border-radius: 5px;
     font-style: italic;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        max-width: 200px;
 }
 
 
