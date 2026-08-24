@@ -211,7 +211,7 @@ h3 {
     transform: skewY(0deg);
 }
 
-iframe {
+video {
     width: 85%;
     aspect-ratio: 16 / 9;
     border-radius: 20px;
