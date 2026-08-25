@@ -29,6 +29,8 @@ function setupHeroForm() {
 
         e.preventDefault();
 
+        fbq('track', 'CompleteRegistration');
+
         fetch("https://script.google.com/macros/s/AKfycbz0JFeTLUZ5nqKlvTnjshJQAu-P5XlbFkf9qFnMLDOY8E3n2E2si1RZhkRHsvmxfGNr/exec", {
             method: "POST",
             body: new FormData(e.target)
@@ -61,6 +63,8 @@ function setupRegisterForm() {
     registerForm.addEventListener("submit", e => {
 
         e.preventDefault();
+
+        fbq('track', 'CompleteRegistration');
         
         fetch("https://script.google.com/macros/s/AKfycbz0JFeTLUZ5nqKlvTnjshJQAu-P5XlbFkf9qFnMLDOY8E3n2E2si1RZhkRHsvmxfGNr/exec", {
             method: "POST",
