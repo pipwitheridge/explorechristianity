@@ -5,6 +5,16 @@
     <form id="heroNumber">
         <input id="heroNumber-input" name="number" placeholder="Enter your mobile number or email...">
         <input type="hidden" name="formType" value="hero">
+        <div class="hp-field" aria-hidden="true">
+            <label for="company">Company</label>
+            <input
+                type="text"
+                id="company"
+                name="company"
+                tabindex="-1"
+                autocomplete="off"
+            >
+        </div>
         <button id="heroNumber-submit" type="submit">
             <svg class="arrow arrowMove" width="30" height="30" viewBox="0 0 30 30">
                 <path d="M4 15h18M16 6l9 9-9 9"
