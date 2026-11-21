@@ -263,3 +263,10 @@ loadComponent("session-overview", "components/session-overview.html");
 
 loadComponent("gallery", "components/gallery.html");
 
+// ========================================
+// Footer
+// ========================================
+
+loadComponent("footer", "components/footer.html");
+
+

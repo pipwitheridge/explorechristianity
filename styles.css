@@ -37,7 +37,7 @@
 body {
     font-family: Helvetica, sans-serif;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 300;
     background-color: rgb(236, 236, 236);
 }
@@ -152,15 +152,10 @@ h3 {
 .questionsCarousel {
     display: flex;
     gap: var(--space-md);
-
     overflow-x: auto;
-
     scroll-snap-type: x mandatory;
-
     scrollbar-width: none;
-
     padding: var(--space-sm) 0;
-
     margin: 20px;
 }
 
@@ -324,15 +319,16 @@ a {
 #register {
     background-color: rgb(37, 37, 40);
     color: whitesmoke;
-    padding: var(--space-sm);
+    padding: var(--space-md);
     text-align: center;
     background-image: url("./images/people.jpg");
     background-blend-mode: multiply;
-    padding-top: 4rem;
+    padding-top: 20px;
     padding-bottom: 200px;
     background-position: center;
     background-size: cover;
     animation: moveBackground 50s ease-in-out infinite alternate;
+    border-radius: 20px;
 }
 
 .simpleForm {
@@ -401,7 +397,6 @@ a {
     box-decoration-break: clone;
 }
 
-
 .hp-field {
     position: absolute;
     left: -9999px;
@@ -409,3 +404,15 @@ a {
     height: 1px;
     overflow: hidden;
 }
+
+#footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.articles-link {
+  display: inline-block;
+  text-decoration: underline;
+  border-radius: 6px
+}
+
